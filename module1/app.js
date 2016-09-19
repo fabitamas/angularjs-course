@@ -1,9 +1,12 @@
 (function () {
 'use strict';
 
-angular.module('tooMuchApp', [])
+angular.module('LunchCheck', [])
+.controller('LunchCheckController', LunchCheckController);
 
-.controller('tooMuchController', function($scope) {
+LunchCheckController.$inject = ['$scope', '$filter'];
+
+function LunchCheckController($scope, $filter) {
 
   $scope.check = function() {
     if (!$scope.list) {
@@ -15,11 +18,7 @@ angular.module('tooMuchApp', [])
       } else {
         $scope.result = 'Too much!';
       }
-
     }
   };
-
-
-});
-
+}
 })();
