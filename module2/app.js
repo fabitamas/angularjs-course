@@ -29,9 +29,19 @@ function ShoppingListCheckOffService() {
     name: "fish",
     quantity: 2
   };
+  var item4 = {
+    name: "apples",
+    quantity: 12
+  };
+  var item5 = {
+    name: "bananas",
+    quantity: 6
+  };
   toBuyItems.push(item);
   toBuyItems.push(item2);
   toBuyItems.push(item3);
+  toBuyItems.push(item4);
+  toBuyItems.push(item5);
 
   // buyItem function definition
   service.buyItem = function (itemIdex) {
